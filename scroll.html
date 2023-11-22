@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .scrolling-container {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            animation: scrolling 10s linear infinite;
+        }
+        
+        .scrolling-content {
+            display: inline-block;
+            padding: 10px;
+            /* Add padding or adjust as needed */
+        }
+        
+        @keyframes scrolling {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scrolling-container">
+        <div class="scrolling-content">Your content goes here. Repeat it to make it scroll.</div>
+    </div>
+
+</body>
+
+</html>
